@@ -1,0 +1,33 @@
+#grid {
+  display: grid;
+  grid-template-areas: "almacen  imagenAlmacen" "imagenPromociones promociones" "recetas     imagenRecetas";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  border: 2px solid black;
+}
+
+.almacen {
+  grid-area: almacen;
+}
+
+.imagenAlmacen {
+  grid-area: imagenPromociones;
+}
+
+.promociones {
+  grid-area: promociones;
+}
+
+.recetas {
+  grid-area: recetas;
+}
+
+.imagenRecetas {
+  grid-area: imagenRecetas;
+}
+
+@media screen and (max-width: 576px) {
+  #grid {
+    grid-template-areas: "almacen" "imagenAlmacen" "promociones" "imagenPromociones" "recetas" "imagenRecetas";
+  }
+}/*# sourceMappingURL=style.css.map */
