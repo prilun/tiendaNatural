@@ -1,3 +1,10 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/*mixin*/
 #grid {
   display: grid;
   grid-template-areas: "almacen  imagenAlmacen" "imagenPromociones promociones" "recetas     imagenRecetas";
@@ -6,24 +13,70 @@
   border: 2px solid black;
 }
 
-.almacen {
+.almacen, .recetas, .promociones {
   grid-area: almacen;
 }
-
-.imagenAlmacen {
-  grid-area: imagenPromociones;
+.almacen__imagen {
+  grid-area: imagenAlmacen;
 }
 
 .promociones {
   grid-area: promociones;
 }
+.promociones__imagen {
+  grid-area: imagenPromociones;
+}
 
 .recetas {
   grid-area: recetas;
 }
-
-.imagenRecetas {
+.recetas__imagen {
   grid-area: imagenRecetas;
+}
+
+.almacen, .recetas, .promociones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid {
+  gap: 1rem;
+}
+
+.almacen, .promociones, .recetas {
+  background-color: #D4E157;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.almacen__link {
+  text-decoration: none;
+  color: #186A3B;
+}
+
+.promociones {
+  background-color: #F7DC6F;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.promociones__link {
+  text-decoration: none;
+  color: #186A3B;
+}
+
+.recetas {
+  background-color: #AED6F1;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.recetas__link {
+  text-decoration: none;
+  color: #186A3B;
+}
+
+.imagenGrid {
+  height: 16rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {

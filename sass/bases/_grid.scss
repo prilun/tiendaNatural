@@ -1,0 +1,34 @@
+
+#grid{
+    display:grid ;
+    grid-template-areas: "almacen  imagenAlmacen"
+                       "imagenPromociones promociones"
+                        "recetas     imagenRecetas";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border: 2px solid black;
+}
+
+
+.almacen{
+    grid-area:almacen;
+    &__imagen{
+        grid-area: imagenAlmacen;
+    }
+}
+
+
+.promociones{
+    grid-area: promociones;
+    &__imagen{
+        grid-area: imagenPromociones;
+    }
+}
+
+.recetas{
+grid-area: recetas;
+&__imagen{
+    grid-area: imagenRecetas;
+}
+}
+

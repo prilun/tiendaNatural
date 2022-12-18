@@ -1,0 +1,11 @@
+.almacen{
+    @include flex-center-center;
+}
+
+.promociones{
+    @extend .almacen;
+}
+
+.recetas{
+    @extend .almacen;
+}

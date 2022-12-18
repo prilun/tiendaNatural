@@ -1,0 +1,36 @@
+#grid{
+    gap: 1rem;
+}
+
+.almacen{
+    background-color: $colorAlmacen;
+    text-transform: uppercase;
+    font-size: 2rem;
+    &__link{
+        @include linkPrincipal
+        }
+}
+
+.promociones{
+    background-color:$colorPromociones;
+    text-transform: uppercase;
+    font-size: 2rem;
+    &__link{
+        @include linkPrincipal
+    }
+ 
+}
+
+.recetas{
+    background-color:$colorRecetas;
+    text-transform: uppercase;
+    font-size: 2rem;
+    &__link{
+        @include linkPrincipal
+        }
+  
+}
+.imagenGrid{
+    height: 16rem;
+    width: 100%;
+} 

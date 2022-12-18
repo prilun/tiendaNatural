@@ -1,0 +1,57 @@
+$tipografiaprimaria:'Raleway', sans-serif;
+$tipografiasecundaria:'Kaisei Opti', serif;
+$colorTitulo: #186A3B;
+$colorLetras:#101d06;
+$colorFondo:#7f9043 ;
+$colorAlmacen:#D4E157 ;
+$colorPromociones: #F7DC6F ;
+$colorRecetas:#AED6F1;
+
+
+/*mixin*/
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin flex-center-space{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+@mixin flex-space-stretch{
+    display: flex;
+    justify-content: space-around;
+     align-items:stretch;
+}
+@mixin caja-principal {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+@mixin capa-principal{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    transition: all 1s ease-out;
+    opacity: 0;
+    color: rgb(6, 92, 6);
+}
+
+@mixin hover-capa-principal{
+    opacity: 1;
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+@mixin linkPrincipal{
+    text-decoration: none;
+    color: $colorTitulo;
+}
