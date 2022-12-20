@@ -10,7 +10,6 @@
   grid-template-areas: "almacen  imagenAlmacen" "imagenPromociones promociones" "recetas     imagenRecetas";
   grid-template-columns: auto;
   grid-template-rows: auto;
-  border: 2px solid black;
 }
 
 .almacen, .recetas, .promociones {
@@ -77,6 +76,72 @@
 .imagenGrid {
   height: 16rem;
   width: 100%;
+}
+
+.separador {
+  height: 20rem;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/*receta flip*/
+.recetaswrap {
+  width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta-wrap {
+  margin: 10px;
+  perspective: 700;
+  -webkit-perspective: 700;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+  transform: rotateY(180deg);
+}
+
+.tarjeta {
+  height: 25rem;
+  width: 25rem;
+  background-color: #AED6F1;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.7s ease;
+  box-shadow: 0px 10px 15px 10px rgba(244, 131, 131, 0.283);
+}
+
+.adelante, .atras {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.atras {
+  transform: rotateY(180deg);
+  text-align: center;
+}
+.atras__titulo {
+  text-align: center;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #186A3B;
+  margin: 2rem;
+}
+.atras__texto {
+  font-family: "Kaisei Opti", serif;
+  color: #101d06;
 }
 
 @media screen and (max-width: 576px) {

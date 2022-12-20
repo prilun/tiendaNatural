@@ -16,7 +16,7 @@ $colorRecetas:#AED6F1;
     align-items:center;
 }
 
-@mixin flex-center-space{
+@mixin flex-space-center{
     display: flex;
     justify-content:space-around;
     align-items:center;
@@ -55,3 +55,10 @@ $colorRecetas:#AED6F1;
     text-decoration: none;
     color: $colorTitulo;
 }
+
+@mixin sizes ($width , $height){
+    height: $height;
+    width: $width;
+ 
+}
+
