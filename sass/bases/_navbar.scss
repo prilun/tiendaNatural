@@ -1,4 +1,20 @@
-.footer{
+
+.navbar{
+    background-color: map-get($estilosNav , colorFondo );
+   margin-bottom: map-get($estilosNav , botom);
+
+}
+.navbar-brand{
+    font-weight:map-get($estilosNav , grosor );
+    text-transform: map-get($estilosNav , transformacionTitulo );
+    color: map-get($estilosNav, colorTitulo );
+}
+
+.nav-link{
+    color: map-get($estilosNav , colorPalabras );
+}
+
+.footerGeneral{
  background-color:#fc6b0a;
  
 }

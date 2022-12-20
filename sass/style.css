@@ -5,6 +5,25 @@
 }
 
 /*mixin*/
+.navbar {
+  background-color: rgba(252, 107, 10, 0.568627451);
+  margin-bottom: 1rem;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #186A3B;
+}
+
+.nav-link {
+  color: #1a3e13;
+}
+
+.footerGeneral {
+  background-color: #fc6b0a;
+}
+
 #grid {
   display: grid;
   grid-template-areas: "almacen  imagenAlmacen" "imagenPromociones promociones" "recetas     imagenRecetas";
@@ -144,8 +163,8 @@
   color: #101d06;
 }
 
-.navbar {
-  color: #fca620;
+.footer {
+  background-color: #fc6b0a;
 }
 
 @media screen and (max-width: 576px) {

@@ -8,11 +8,13 @@ $colorPromociones: #F7DC6F ;
 $colorRecetas:#AED6F1;
 
 $estilosNav:(
-    colorFondo: #fc6b0a,
-    Tcenter:center,
-    FontLink:'Kaisei Opti', serif,
-    FontTitulo:'Raleway', sans-serif,
+    colorFondo: #fc6b0a91,
+    tamaño:1rem,
+    botom:1rem,
+    grosor:bolder,
+    transformacionTitulo: uppercase,
     colorPalabras:#1a3e13,
+    colorTitulo:#186A3B,
 
   );
   

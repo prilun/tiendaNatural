@@ -3,8 +3,8 @@
 }
 
 .almacen{
-    background-color: black;
-    text-transform: uppercase;
+    background-color:$colorAlmacen;
+    text-transform : uppercase;
     font-size: 2rem;
     &__link{
         @include linkPrincipal
