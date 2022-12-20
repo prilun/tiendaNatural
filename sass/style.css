@@ -144,6 +144,10 @@
   color: #101d06;
 }
 
+.navbar {
+  color: #fca620;
+}
+
 @media screen and (max-width: 576px) {
   #grid {
     grid-template-areas: "almacen" "imagenAlmacen" "promociones" "imagenPromociones" "recetas" "imagenRecetas";

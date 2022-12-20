@@ -3,7 +3,7 @@
 }
 
 .almacen{
-    background-color: $colorAlmacen;
+    background-color: black;
     text-transform: uppercase;
     font-size: 2rem;
     &__link{
@@ -100,4 +100,7 @@
     }
   }
   
-  
+  .footer{
+ background-color:#fc6b0a;
+ 
+}
