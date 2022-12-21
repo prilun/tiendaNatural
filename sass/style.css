@@ -104,67 +104,39 @@
   margin-bottom: 2rem;
 }
 
-/*receta flip*/
-.recetaswrap {
-  width: 1100px;
-  margin: 50px auto;
-  display: flex;
-  justify-content: center;
-}
-
-.tarjeta-wrap {
-  margin: 10px;
-  perspective: 700;
-  -webkit-perspective: 700;
-}
-
-.tarjeta-wrap:hover .tarjeta {
-  transform: rotateY(180deg);
-}
-
-.tarjeta {
-  height: 25rem;
-  width: 25rem;
-  background-color: #AED6F1;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 0.7s ease;
-  box-shadow: 0px 10px 15px 10px rgba(244, 131, 131, 0.283);
-}
-
-.adelante, .atras {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+/*carousel*/
+.carousel {
+  margin-top: 5rem;
 }
 
 .card {
-  height: 100%;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 360px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  border: none;
 }
 
-.atras {
-  transform: rotateY(180deg);
+.card-title {
+  font-size: 8rem;
   text-align: center;
-}
-.atras__titulo {
-  text-align: center;
-  padding: 10px;
-  font-family: "Raleway", sans-serif;
-  color: #186A3B;
-  margin: 2rem;
-}
-.atras__texto {
-  font-family: "Kaisei Opti", serif;
-  color: #101d06;
 }
 
-.footer {
-  background-color: #fc6b0a;
+.card-text {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+body {
+  min-height: 100%;
+}
+
+.parrafo {
+  font-family: "Ibarra Real Nova", serif;
 }
 
 @media screen and (max-width: 576px) {
