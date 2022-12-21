@@ -1,7 +1,7 @@
 
 .navbar{
     background-color: map-get($estilosNav , colorFondo );
-   margin-bottom: map-get($estilosNav , botom);
+  
 
 }
 .navbar-brand{
@@ -18,6 +18,6 @@
 }
 
 .footerGeneral{
- background-color:#fc6b0a;
+ background-color:map-get($estilosNav , colorFondo )
  
 }

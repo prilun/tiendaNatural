@@ -1,43 +1,55 @@
-#grid{
-    gap: 1rem;
-}
-
 .almacen{
     background-color:$colorAlmacen;
     text-transform : uppercase;
     font-size: 2rem;
+    position: relative;
     &__link{
-        @include linkPrincipal
+        @include linkPrincipal;
+       
         }
+    &__link:hover{
+      @include linkHover;
+    }
+    &__imagen{
+      @include sizes (100% , 100%);
+    }
 }
 
 .promociones{
     background-color:$colorPromociones;
     text-transform: uppercase;
     font-size: 2rem;
+    position: relative;
     &__link{
         @include linkPrincipal;
-        transition: all 1s ease-out;
-        opacity: 0;
+       
     }
     &__link:hover{
-      opacity: 1;
+      @include linkHover;
     }
- 
+    &__imagen{
+      @include sizes (100% , 100%);
+    }
 }
 
 .recetas{
     background-color:$colorRecetas;
     text-transform: uppercase;
     font-size: 2rem;
+    position: relative;
     &__link{
         @include linkPrincipal
         }
+
+    &__link:hover{
+      @include linkHover;
+    }
+    &__imagen{
+          @include sizes (100% , 100%);
+        }
   
 }
-.imagenGrid{
-    @include sizes (100% , 16rem);
-} 
+ 
 .separador{
     @include sizes (100% , 20rem);
     margin-top: 4rem;
@@ -50,13 +62,10 @@
   margin-top: 5rem;
   }
   .card{
-  
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 360px;
-    /* margin-top: 10px; */
     margin-bottom: 10px;
+    @include sizes (250px , 360px);
     border: none;
   }
   .card-title{
@@ -71,13 +80,3 @@
     font-weight: bold;
   }
   
-  
-  body{
-    min-height: 100%;
-  }
-  
-  
-
-  .parrafo{
-    font-family: 'Ibarra Real Nova', serif;
-  }
