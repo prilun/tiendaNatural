@@ -20,7 +20,7 @@
 }
 
 .footerGeneral {
-  background-color: #fc6b0a;
+  background-color: rgba(204, 238, 141, 0.5725490196);
 }
 
 #grid {
@@ -28,6 +28,7 @@
   grid-template-areas: "promociones almacen recetas ";
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 50rem;
+  gap: 4px;
 }
 
 .almacen, .recetas, .promociones {
@@ -57,10 +58,6 @@
   align-items: center;
 }
 
-#grid {
-  gap: 4px;
-}
-
 .almacen, .promociones, .recetas {
   background-color: #D4E157;
   text-transform: uppercase;
@@ -71,6 +68,18 @@
   text-decoration: none;
   color: #186A3B;
   position: absolute;
+  transition: all 1s ease-out;
+  opacity: 0;
+  height: 40rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.almacen__link:hover {
+  opacity: 1;
+  background-color: rgba(127, 144, 67, 0.1960784314);
+  color: aliceblue;
 }
 .almacen__imagen {
   height: 100%;
@@ -87,6 +96,18 @@
   text-decoration: none;
   color: #186A3B;
   position: absolute;
+  transition: all 1s ease-out;
+  opacity: 0;
+  height: 40rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promociones__link:hover {
+  opacity: 1;
+  background-color: rgba(127, 144, 67, 0.1960784314);
+  color: aliceblue;
 }
 .promociones__imagen {
   height: 100%;
@@ -103,14 +124,21 @@
   text-decoration: none;
   color: #186A3B;
   position: absolute;
+  transition: all 1s ease-out;
+  opacity: 0;
+  height: 40rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recetas__link:hover {
+  opacity: 1;
+  background-color: rgba(127, 144, 67, 0.1960784314);
+  color: aliceblue;
 }
 .recetas__imagen {
   height: 100%;
-  width: 100%;
-}
-
-.imagenGrid {
-  height: 16rem;
   width: 100%;
 }
 
@@ -129,10 +157,9 @@
 .card {
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
-  height: 360px;
-  /* margin-top: 10px; */
   margin-bottom: 10px;
+  height: 360px;
+  width: 250px;
   border: none;
 }
 
@@ -146,14 +173,6 @@
   font-size: 1rem;
   padding-top: 2rem;
   font-weight: bold;
-}
-
-body {
-  min-height: 100%;
-}
-
-.parrafo {
-  font-family: "Ibarra Real Nova", serif;
 }
 
 @media screen and (max-width: 576px) {

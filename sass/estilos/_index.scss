@@ -1,7 +1,3 @@
-#grid{
-    gap: 4px;
-}
-
 .almacen{
     background-color:$colorAlmacen;
     text-transform : uppercase;
@@ -11,6 +7,9 @@
         @include linkPrincipal;
        
         }
+    &__link:hover{
+      @include linkHover;
+    }
     &__imagen{
       @include sizes (100% , 100%);
     }
@@ -25,6 +24,9 @@
         @include linkPrincipal;
        
     }
+    &__link:hover{
+      @include linkHover;
+    }
     &__imagen{
       @include sizes (100% , 100%);
     }
@@ -38,14 +40,16 @@
     &__link{
         @include linkPrincipal
         }
+
+    &__link:hover{
+      @include linkHover;
+    }
     &__imagen{
           @include sizes (100% , 100%);
         }
   
 }
-.imagenGrid{
-    @include sizes (100% , 16rem);
-} 
+ 
 .separador{
     @include sizes (100% , 20rem);
     margin-top: 4rem;
@@ -58,13 +62,10 @@
   margin-top: 5rem;
   }
   .card{
-  
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 360px;
-    /* margin-top: 10px; */
     margin-bottom: 10px;
+    @include sizes (250px , 360px);
     border: none;
   }
   .card-title{
@@ -79,13 +80,3 @@
     font-weight: bold;
   }
   
-  
-  body{
-    min-height: 100%;
-  }
-  
-  
-
-  .parrafo{
-    font-family: 'Ibarra Real Nova', serif;
-  }
