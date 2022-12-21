@@ -1,32 +1,45 @@
 #grid{
-    gap: 1rem;
+    gap: 4px;
 }
 
 .almacen{
     background-color:$colorAlmacen;
     text-transform : uppercase;
     font-size: 2rem;
+    position: relative;
     &__link{
-        @include linkPrincipal
+        @include linkPrincipal;
+       
         }
+    &__imagen{
+      @include sizes (100% , 100%);
+    }
 }
 
 .promociones{
     background-color:$colorPromociones;
     text-transform: uppercase;
     font-size: 2rem;
+    position: relative;
     &__link{
-        @include linkPrincipal
+        @include linkPrincipal;
+       
     }
- 
+    &__imagen{
+      @include sizes (100% , 100%);
+    }
 }
 
 .recetas{
     background-color:$colorRecetas;
     text-transform: uppercase;
     font-size: 2rem;
+    position: relative;
     &__link{
         @include linkPrincipal
+        }
+    &__imagen{
+          @include sizes (100% , 100%);
         }
   
 }

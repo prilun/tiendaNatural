@@ -1,11 +1,9 @@
 
 #grid{
     display:grid ;
-    grid-template-areas: "almacen  imagenAlmacen"
-                       "imagenPromociones promociones"
-                        "recetas     imagenRecetas";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-areas: "promociones almacen recetas ";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50rem;
   
 }
 

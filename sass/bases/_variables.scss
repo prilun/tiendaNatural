@@ -8,7 +8,7 @@ $colorPromociones: #F7DC6F ;
 $colorRecetas:#AED6F1;
 
 $estilosNav:(
-    colorFondo: #fc6b0a91,
+    colorFondo:#ccee8d92,
     tamaño:1rem,
     botom:1rem,
     grosor:bolder,
@@ -66,6 +66,7 @@ $estilosNav:(
 @mixin linkPrincipal{
     text-decoration: none;
     color: $colorTitulo;
+    position:absolute;
 }
 
 @mixin sizes ($width , $height){

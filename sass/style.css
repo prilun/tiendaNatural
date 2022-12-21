@@ -6,8 +6,7 @@
 
 /*mixin*/
 .navbar {
-  background-color: rgba(252, 107, 10, 0.568627451);
-  margin-bottom: 1rem;
+  background-color: rgba(204, 238, 141, 0.5725490196);
 }
 
 .navbar-brand {
@@ -26,9 +25,9 @@
 
 #grid {
   display: grid;
-  grid-template-areas: "almacen  imagenAlmacen" "imagenPromociones promociones" "recetas     imagenRecetas";
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-template-areas: "promociones almacen recetas ";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50rem;
 }
 
 .almacen, .recetas, .promociones {
@@ -59,37 +58,55 @@
 }
 
 #grid {
-  gap: 1rem;
+  gap: 4px;
 }
 
 .almacen, .promociones, .recetas {
   background-color: #D4E157;
   text-transform: uppercase;
   font-size: 2rem;
+  position: relative;
 }
 .almacen__link {
   text-decoration: none;
   color: #186A3B;
+  position: absolute;
+}
+.almacen__imagen {
+  height: 100%;
+  width: 100%;
 }
 
 .promociones {
   background-color: #F7DC6F;
   text-transform: uppercase;
   font-size: 2rem;
+  position: relative;
 }
 .promociones__link {
   text-decoration: none;
   color: #186A3B;
+  position: absolute;
+}
+.promociones__imagen {
+  height: 100%;
+  width: 100%;
 }
 
 .recetas {
   background-color: #AED6F1;
   text-transform: uppercase;
   font-size: 2rem;
+  position: relative;
 }
 .recetas__link {
   text-decoration: none;
   color: #186A3B;
+  position: absolute;
+}
+.recetas__imagen {
+  height: 100%;
+  width: 100%;
 }
 
 .imagenGrid {
