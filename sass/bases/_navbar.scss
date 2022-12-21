@@ -10,6 +10,9 @@
     color: map-get($estilosNav, colorTitulo );
 }
 
+.nav-item{
+    text-align: end;
+}
 .nav-link{
     color: map-get($estilosNav , colorPalabras );
 }

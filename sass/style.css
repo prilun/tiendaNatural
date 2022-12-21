@@ -16,6 +16,10 @@
   color: #186A3B;
 }
 
+.nav-item {
+  text-align: end;
+}
+
 .nav-link {
   color: #1a3e13;
 }
