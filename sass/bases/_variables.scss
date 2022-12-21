@@ -66,6 +66,7 @@ $estilosNav:(
 @mixin linkPrincipal{
     text-decoration: none;
     color: $colorTitulo;
+    
 }
 
 @mixin sizes ($width , $height){
