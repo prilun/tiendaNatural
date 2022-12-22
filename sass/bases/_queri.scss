@@ -1,0 +1,47 @@
+
+@media screen and ( max-width: 576px){
+    #grid{
+        grid-template-areas: "promociones"
+                             "almacen"
+                             "recetas";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    }
+
+.almacen{
+    @include sizes (100% , 25rem);
+
+    &__link{
+       opacity: map-get($estiloHoverQueri , opacidad );
+       height: map-get($estiloHoverQueri , tamañoHeight );
+       width:  map-get($estiloHoverQueri , tamañoWidht );
+       color: map-get($estiloHoverQueri , colorPalabra );
+           }
+}
+}
+
+.promociones{
+    
+    &__link{
+        opacity: map-get($estiloHoverQueri , opacidad );
+        height: map-get($estiloHoverQueri , tamañoHeight );
+        width:  map-get($estiloHoverQueri , tamañoWidht );
+        color: map-get($estiloHoverQueri , colorPalabra );
+        margin-bottom: map-get($estiloHoverQueri , 10rem );
+    }
+}
+
+.recetas{
+    &__link{
+        opacity: map-get($estiloHoverQueri , opacidad );
+        height: map-get($estiloHoverQueri , tamañoHeight );
+        width:  map-get($estiloHoverQueri , tamañoWidht );
+        color: map-get($estiloHoverQueri , colorPalabra );
+        margin-bottom: map-get($estiloHoverQueri , 10rem );
+    }
+.separador{
+    @include sizes (100% , auto);
+    margin-top: 4rem;
+}
+}

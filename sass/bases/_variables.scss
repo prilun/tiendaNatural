@@ -18,11 +18,16 @@ $estilosNav:(
 
   );
   
-
-
+$estiloHoverQueri : (
+    opacidad: 1,
+    tamañoHeight: 10rem,
+    tamañoWidht: 15rem,
+    colorPalabra: aliceblue,
+    10rem:10rem,
+);
 /*mixin*/
 
-@mixin flex-center-center {
+@mixin flex-center-center{
     display: flex;
     justify-content:center;
     align-items:center;

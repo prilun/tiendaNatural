@@ -4,20 +4,9 @@
 @import '../sass/bases/grid';
 @import '../sass/bases/flexbox';
 @import '../sass/estilos/index';
+@import '../sass/bases/queri';
 
 
 
 
 
-@media screen and ( max-width: 576px){
-    #grid{
-        grid-template-areas: "almacen"
-                              "imagenAlmacen"
-                              "promociones"
-                             "imagenPromociones"
-                             "recetas"
-                             "imagenRecetas";
-  
-    }
-}
-   

@@ -179,8 +179,46 @@
   font-weight: bold;
 }
 
+.separador {
+  height: auto;
+  width: auto;
+}
+
 @media screen and (max-width: 576px) {
   #grid {
-    grid-template-areas: "almacen" "imagenAlmacen" "promociones" "imagenPromociones" "recetas" "imagenRecetas";
+    grid-template-areas: "promociones" "almacen" "recetas";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
   }
+  .almacen, .promociones, .recetas {
+    height: 25rem;
+    width: 100%;
+  }
+  .almacen__link {
+    opacity: 1;
+    height: 10rem;
+    width: 15rem;
+    color: aliceblue;
+  }
+}
+.promociones__link {
+  opacity: 1;
+  height: 10rem;
+  width: 15rem;
+  color: aliceblue;
+  margin-bottom: 10rem;
+}
+
+.recetas__link {
+  opacity: 1;
+  height: 10rem;
+  width: 15rem;
+  color: aliceblue;
+  margin-bottom: 10rem;
+}
+.recetas .separador {
+  height: auto;
+  width: 100%;
+  margin-top: 4rem;
 }/*# sourceMappingURL=style.css.map */
