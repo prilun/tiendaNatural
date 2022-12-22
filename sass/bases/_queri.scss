@@ -19,7 +19,7 @@
        color: map-get($estiloHoverQueri , colorPalabra );
            }
 }
-}
+
 
 .promociones{
     
@@ -43,5 +43,6 @@
 .separador{
     @include sizes (100% , auto);
     margin-top: 4rem;
+}
 }
 }

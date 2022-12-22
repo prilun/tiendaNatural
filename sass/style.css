@@ -201,24 +201,23 @@
     width: 15rem;
     color: aliceblue;
   }
-}
-.promociones__link {
-  opacity: 1;
-  height: 10rem;
-  width: 15rem;
-  color: aliceblue;
-  margin-bottom: 10rem;
-}
-
-.recetas__link {
-  opacity: 1;
-  height: 10rem;
-  width: 15rem;
-  color: aliceblue;
-  margin-bottom: 10rem;
-}
-.recetas .separador {
-  height: auto;
-  width: 100%;
-  margin-top: 4rem;
+  .promociones__link {
+    opacity: 1;
+    height: 10rem;
+    width: 15rem;
+    color: aliceblue;
+    margin-bottom: 10rem;
+  }
+  .recetas__link {
+    opacity: 1;
+    height: 10rem;
+    width: 15rem;
+    color: aliceblue;
+    margin-bottom: 10rem;
+  }
+  .recetas .separador {
+    height: auto;
+    width: 100%;
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
