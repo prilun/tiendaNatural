@@ -5,7 +5,7 @@ $colorLetras:#101d06;
 $colorFondo:#7f9043 ;
 $colorAlmacen:#D4E157 ;
 $colorPromociones: #F7DC6F ;
-$colorRecetas:#AED6F1;
+$colorRecetas:#aed6f189;
 
 $estilosNav:(
     colorFondo:#ccee8d92,
@@ -44,14 +44,17 @@ $estiloHoverQueri : (
      align-items:stretch;
 }
 
-@mixin linkPrincipal{
-    text-decoration: none;
-    color: $colorTitulo;
-    position:absolute;
-    transition: all 1s ease-out;
-    opacity: 0;
-    @include sizes (20rem , 40rem);
-    @include flex-center-center;
+$estilolinkPrincipal :(
+    textDecoration: none,
+    textBlanco:aliceblue,
+    posicion:absolute,
+    transicion: all 1s ease-out,
+    opacidad: 0,
+   
+);
+
+@mixin bordeImagen{
+    border: 5px solid rgba(163, 238, 236, 0.39);
 }
 
 @mixin linkHover {

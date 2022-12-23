@@ -4,7 +4,12 @@
     font-size: 2rem;
     position: relative;
     &__link{
-        @include linkPrincipal;
+      text-decoration: map-get($estilolinkPrincipal , textDecoration );
+      position:map-get($estilolinkPrincipal , posicion );
+      transition: map-get($estilolinkPrincipal , transicion );
+      opacity: map-get($estilolinkPrincipal, opacidad );
+      @include sizes (20rem , 40rem);
+      @include flex-center-center;
        
         }
     &__link:hover{
@@ -21,7 +26,8 @@
     font-size: 2rem;
     position: relative;
     &__link{
-        @include linkPrincipal;
+        @extend .almacen__link;
+        
        
     }
     &__link:hover{
@@ -38,7 +44,8 @@
     font-size: 2rem;
     position: relative;
     &__link{
-        @include linkPrincipal
+      @extend .almacen__link;
+        
         }
 
     &__link:hover{

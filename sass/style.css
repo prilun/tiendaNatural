@@ -62,15 +62,15 @@
   align-items: center;
 }
 
+/*paginas*/
 .almacen, .promociones, .recetas {
   background-color: #D4E157;
   text-transform: uppercase;
   font-size: 2rem;
   position: relative;
 }
-.almacen__link {
+.almacen__link, .recetas__link, .promociones__link {
   text-decoration: none;
-  color: #186A3B;
   position: absolute;
   transition: all 1s ease-out;
   opacity: 0;
@@ -80,7 +80,7 @@
   justify-content: center;
   align-items: center;
 }
-.almacen__link:hover {
+.almacen__link:hover, .recetas__link:hover, .promociones__link:hover {
   opacity: 1;
   background-color: rgba(127, 144, 67, 0.1960784314);
   color: aliceblue;
@@ -96,18 +96,6 @@
   font-size: 2rem;
   position: relative;
 }
-.promociones__link {
-  text-decoration: none;
-  color: #186A3B;
-  position: absolute;
-  transition: all 1s ease-out;
-  opacity: 0;
-  height: 40rem;
-  width: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .promociones__link:hover {
   opacity: 1;
   background-color: rgba(127, 144, 67, 0.1960784314);
@@ -119,22 +107,10 @@
 }
 
 .recetas {
-  background-color: #AED6F1;
+  background-color: rgba(174, 214, 241, 0.537254902);
   text-transform: uppercase;
   font-size: 2rem;
   position: relative;
-}
-.recetas__link {
-  text-decoration: none;
-  color: #186A3B;
-  position: absolute;
-  transition: all 1s ease-out;
-  opacity: 0;
-  height: 40rem;
-  width: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .recetas__link:hover {
   opacity: 1;
@@ -184,6 +160,45 @@
   width: auto;
 }
 
+.receta {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+.receta__Titulo {
+  font-family: "Raleway", sans-serif;
+  color: #186A3B;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.receta__info {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.receta__link {
+  text-decoration: none;
+  position: absolute;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(174, 214, 241, 0.537254902);
+  color: #186A3B;
+}
+.receta__imagen {
+  width: 100%;
+  height: 20rem;
+  opacity: 0.8;
+}
+.receta__imagen:hover {
+  opacity: 1;
+  border: 5px solid rgba(163, 238, 236, 0.39);
+}
+
 @media screen and (max-width: 576px) {
   #grid {
     grid-template-areas: "promociones" "almacen" "recetas";
@@ -195,7 +210,7 @@
     height: 25rem;
     width: 100%;
   }
-  .almacen__link {
+  .almacen__link, .promociones__link, .recetas__link {
     opacity: 1;
     height: 10rem;
     width: 15rem;
