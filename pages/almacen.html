@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-      <link rel="stylesheet" href="./sass/style.css">
+      <link rel="stylesheet" href="../sass/style.css">
     <!--WOW-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!---tipos de letras-->
@@ -27,38 +27,36 @@
     </head>
 <body>
   <header>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Hidden brand</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./almacen.html">Tienda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./recetas.html">Recetas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./preguntas.html">Preguntas Frecuentes</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  </header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="../index.html">Tienda Natural</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./almacen.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./preguntas.html">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
   <section >
     <!--carousel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -69,21 +67,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../img/carousel2.jpg" class="d-block w-100" alt="carousel1">
+          <img src="../imagenes/carousel1.jpg" class="d-block w-100" alt="carousel1">
           <div class="carousel-caption d-none d-md-block">
             <h5>Alimentos organicos</h5>
             <p> Sin quimicos ni aditivos sinteticos!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../img/carousel3.jpg" class="d-block w-100" alt="carousl3">
+          <img src="../imagenes/carousel3.jpg" class="d-block w-100" alt="carousl3">
           <div class="carousel-caption d-none d-md-block">
             <h5>Agroecologicos</h5>
             <p>Directos del campo</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../img/carousel1.jpg" class="d-block w-100" alt="carousel2">
+          <img src="../imagenes/carousel2.jpg" class="d-block w-100" alt="carousel2">
           <div class="carousel-caption d-none d-md-block">
             <h5>Precio accesible</h5>
             <p>Se puede comer rico y saludable de manera accesible!</p>
@@ -100,189 +98,229 @@
       </button>
     </div>
   </section>
-  <section class="productos">
+  <section>
+    <div class="productos container">
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+    </div> <div class="card" style="width: 18rem;">
+      <img src="../imagenes/producto.png" class="card__imagen card-img-top" alt="frasco de mermelada">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Mermelada Don Orieta</h5>
+        <p class="card__precio">$500</p>
+         <div class="card__boton btn btn-success">
+          <i class="card__carrito bi bi-cart4"></i>
+          <a class="card__link" href="#" >Agregar</a>
+         </div>
       </div>
     </div>
   </section>
-  <div class="separador">
-    viñeta separadora
-  </div>
+  <section>
+    <img class="separador" src="../imagenes/separador.png" alt="naranja con jugo">
+  </section>
+    <!--carousel-->
+    <section>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="contenidoCarousel">
+              <div class="card-body">
+                <h2 class="contenidoCarousel__titulo"><i class="bi bi-cart-fill"></i></h2>
+                <p class="contenidoCarousel__texto">Tienda Online 24 hs</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+              <div class="contenidoCarousel">
+                <h2 class="contenidoCarousel__titulo"><i class="bi bi-credit-card-fill"></i></h2>
+                <p class="contenidoCarousel__texto">Recibimos todos los medios de pago</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="contenidoCarousel">
+                <h2 class="contenidoCarousel__titulo"><i class="bi bi-box-fill"></i></h2>
+                <p class="contenidoCarousel__texto">Envios gratis a partir de $15.000</p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+  <div class="container">
   <div class="row">
-  <div class="Promociones col-12 col-lg-6">
-    <a class="Promociones__link" href="#">Promociones</a>
+  <div class="promocionesTienda text-center col-12 col-lg-6">
+    <a class="promocionesTienda__link" href="#">Promociones</a>
   </div>
-  <div class="Combos col-12 col-lg-6">
-    <a class="Combos__link" href="#">Combos</a>
+  <div class="combosTienda text-center col-12 col-lg-6">
+    <a class="combosTienda__link " href="#">Combos</a>
   </div>
   </div>
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
+  </div>
+    <!-- Footer -->
+    <footer class=" footerGeneral text-center text-lg-start text-muted">
+      <!-- Section: Links  -->
+      <section class="">
+          <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                      <!-- Content -->
+                      <h6 class="text-uppercase fw-bold mt-4 mb-4">
+                          <i class="fas fa-gem me-3"></i>Tienda Natural
+                      </h6>
+                      <p>
+                          Productos directo de nuestros campos !
+                      </p>
+                  </div>
+                  <!-- Grid column -->
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase fw-bold mt-4 mb-4">
+                          Accesos Rapidos
+                      </h6>
+                      <p>
+                          <a href="./index.html" class="text-reset">Inicio</a>
+                      </p>
+                      <p>
+                          <a href="./pages/almacen.html" class="text-reset">Almacen</a>
+                      </p>
+                      <p>
+                          <a href="./pages/recetas.html" class="text-reset">Recetas</a>
+                      </p>
+                      <p>
+                          <a href="./pages/preguntas.html" class="text-reset">Preguntas</a>
+                      </p>
+                      <p>
+                          <a href="./pages/contacto.html" class="text-reset">Contacto</a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase fw-bold mt-4 mb-4">
+                          Nuestras Redes Sociales
+                      </h6>
+                      <p>
+                          <a href="https://web.whatsapp.com/" class="text-reset" target="_blank"><i
+                                  class="bi bi-whatsapp"></i></a>
+                      </p>
+                      <p>
+                          <a href="https://m.facebook.com/" class="text-reset" target="_blank"><i
+                                  class="bi bi-facebook"></i></a>
+                      </p>
+                      <p>
+                          <a href="https://www.instagram.com/" class="text-reset" target="_blank"><i
+                                  class="bi bi-instagram"></i></a>
+                      </p>
+                      <p>
+                          <a href="https://www.google.com.ar/maps/@-31.4279641,-64.2069805,15z"
+                              class="text-reset" target="_blank"><i class="bi bi-geo-fill"></i></a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+          </div>
+      </section>
+      <!-- Section: Links  -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <!-- Grid column -->
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+      <!-- Copyright -->
+  </footer>
 <!--bstrp y wow-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

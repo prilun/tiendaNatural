@@ -5,9 +5,7 @@
     position: relative;
     &__link{
       text-decoration: map-get($estilolinkPrincipal , textDecoration );
-      position:map-get($estilolinkPrincipal , posicion );
-      transition: map-get($estilolinkPrincipal , transicion );
-      opacity: map-get($estilolinkPrincipal, opacidad );
+      color: aliceblue;
       @include sizes (20rem , 40rem);
       @include flex-center-center;
        
@@ -26,9 +24,12 @@
     font-size: 2rem;
     position: relative;
     &__link{
-        @extend .almacen__link;
-        
-       
+      text-decoration: map-get($estilolinkPrincipal , textDecoration );
+      position:map-get($estilolinkPrincipal , posicion );
+      transition: map-get($estilolinkPrincipal , transicion );
+      opacity: map-get($estilolinkPrincipal, opacidad );
+      @include sizes (20rem , 40rem);
+      @include flex-center-center;
     }
     &__link:hover{
       @include linkHover;
@@ -44,7 +45,7 @@
     font-size: 2rem;
     position: relative;
     &__link{
-      @extend .almacen__link;
+      @extend .promociones__link;
         
         }
 
@@ -65,27 +66,25 @@
 
  /*carousel*/
   
- .carousel{
-  margin-top: 5rem;
-  }
-  .card{
+
+  .contenidoCarousel{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     @include sizes (250px , 360px);
     border: none;
+    &__titulo{
+      font-size: 8rem;
+      text-align: center;
+    }
+    &__texto{
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 2rem;
+      font-weight: bold;
+    }
   }
-  .card-title{
-    font-size: 8rem;
-    text-align: center;
-  }
-
-  .card-text{
-    text-align: center;
-    font-size: 1rem;
-    padding-top: 2rem;
-    font-weight: bold;
-  }
+ 
   
 .separador{
   @include sizes (auto , auto);

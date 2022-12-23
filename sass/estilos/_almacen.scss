@@ -1,0 +1,63 @@
+.productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card{
+    border: 2px solid $colorFondo;
+    margin-bottom: 5rem;
+    &__imagen{
+        height: 16rem;
+        width: 12rem;
+        margin-left: 3rem;
+        margin-top: 1rem
+    }
+    &__boton{
+        width: 10rem;
+        height: 4rem;
+        
+
+    }
+    &__link{
+        color:aliceblue;
+        font-family: $tipografiaprimaria;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    &__carrito{
+        font-size: 25px;
+    }
+}
+
+.promocionesTienda{
+    border: 2px solid black;
+    background-color:$colorPromociones;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family:$tipografiaprimaria;
+    height: 12rem;
+    padding-top: 5rem;
+    &__link{
+        padding-top: 5rem;
+        text-decoration: none;
+        color:$colorTitulo;
+    }
+}
+
+.combosTienda{
+    border: 2px solid black;
+    background-color: $colorAlmacen;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family:$tipografiaprimaria;
+    height: 12rem;
+    padding-top: 5rem;
+    &__link{
+        text-decoration: none;
+        color:$colorTitulo;
+    }
+}

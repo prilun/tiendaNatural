@@ -1,0 +1,40 @@
+.formulario{
+    border: 2px solid $colorFondo;
+    margin-top: 2rem;
+    &__etiquetas{
+        margin-top: 1.2rem;
+    }
+    &__click{
+        margin-bottom: 5px;
+    }
+}
+
+.mapa{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contacto__listaUno{
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding-left: 0rem;
+    text-align: center;
+    color:$colorLetras;
+    &__titulo{
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: $colorTitulo;
+    }
+}
+
+.contacto__listaDos{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link{
+        padding: 10px 20px;
+        text-transform: none;
+        color:$colorTitulo; 
+    }
+}

@@ -1,11 +1,11 @@
 $tipografiaprimaria:'Raleway', sans-serif;
 $tipografiasecundaria:'Kaisei Opti', serif;
 $colorTitulo: #186A3B;
-$colorLetras:#101d06;
+$colorLetras:#964905;
 $colorFondo:#7f9043 ;
 $colorAlmacen:#D4E157 ;
 $colorPromociones: #F7DC6F ;
-$colorRecetas:#aed6f189;
+$colorRecetas:#59b6f5f9;
 
 $estilosNav:(
     colorFondo:#ccee8d92,
@@ -53,8 +53,9 @@ $estilolinkPrincipal :(
    
 );
 
-@mixin bordeImagen{
-    border: 5px solid rgba(163, 238, 236, 0.39);
+@mixin bordeCategorias{
+    border-right: 2px solid rgba(201, 127, 8, 0.782);
+    
 }
 
 @mixin linkHover {

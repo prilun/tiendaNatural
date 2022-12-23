@@ -2,6 +2,7 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: "Kaisei Opti", serif;
 }
 
 /*mixin*/
@@ -69,18 +70,16 @@
   font-size: 2rem;
   position: relative;
 }
-.almacen__link, .recetas__link, .promociones__link {
+.almacen__link {
   text-decoration: none;
-  position: absolute;
-  transition: all 1s ease-out;
-  opacity: 0;
+  color: aliceblue;
   height: 40rem;
   width: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.almacen__link:hover, .recetas__link:hover, .promociones__link:hover {
+.almacen__link:hover {
   opacity: 1;
   background-color: rgba(127, 144, 67, 0.1960784314);
   color: aliceblue;
@@ -96,7 +95,18 @@
   font-size: 2rem;
   position: relative;
 }
-.promociones__link:hover {
+.promociones__link, .recetas__link {
+  text-decoration: none;
+  position: absolute;
+  transition: all 1s ease-out;
+  opacity: 0;
+  height: 40rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promociones__link:hover, .recetas__link:hover {
   opacity: 1;
   background-color: rgba(127, 144, 67, 0.1960784314);
   color: aliceblue;
@@ -107,7 +117,7 @@
 }
 
 .recetas {
-  background-color: rgba(174, 214, 241, 0.537254902);
+  background-color: rgba(89, 182, 245, 0.9764705882);
   text-transform: uppercase;
   font-size: 2rem;
   position: relative;
@@ -130,11 +140,7 @@
 }
 
 /*carousel*/
-.carousel {
-  margin-top: 5rem;
-}
-
-.card {
+.contenidoCarousel {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -142,13 +148,11 @@
   width: 250px;
   border: none;
 }
-
-.card-title {
+.contenidoCarousel__titulo {
   font-size: 8rem;
   text-align: center;
 }
-
-.card-text {
+.contenidoCarousel__texto {
   text-align: center;
   font-size: 1rem;
   padding-top: 2rem;
@@ -160,10 +164,6 @@
   width: auto;
 }
 
-.receta {
-  padding: 20px;
-  font-size: 1.5rem;
-}
 .receta__Titulo {
   font-family: "Raleway", sans-serif;
   color: #186A3B;
@@ -171,32 +171,177 @@
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
-.receta__info {
+.receta__Titulo__subtitulo {
+  font-family: "Kaisei Opti", serif;
+  color: #964905;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  margin-bottom: 2rem;
 }
-.receta__link {
+
+.categoriasRecetas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recetasComidas {
+  height: 20rem;
+  width: 18rem;
+  margin: 2rem;
+  border-right: 2px solid rgba(201, 127, 8, 0.782);
+}
+.recetasComidas__titulo {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
-  position: absolute;
-  height: 20rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(174, 214, 241, 0.537254902);
-  color: #186A3B;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: rgba(89, 182, 245, 0.9764705882);
 }
-.receta__imagen {
+.recetasComidas__lista {
+  list-style: none;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+.recetasComidas__lista__link {
+  text-decoration: none;
+  color: #964905;
+  font-family: "Kaisei Opti", serif;
+}
+.recetasComidas__imagen {
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+  margin-left: 4rem;
+}
+
+.recetasMasPedidas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.recetasMasPedidas__tarjeta {
+  margin-bottom: 5rem;
+}
+.recetasMasPedidas__tarjeta__imagen {
+  height: 100%;
   width: 100%;
-  height: 20rem;
   opacity: 0.8;
 }
-.receta__imagen:hover {
+.recetasMasPedidas__tarjeta__imagen:hover {
   opacity: 1;
-  border: 5px solid rgba(163, 238, 236, 0.39);
+  border: 1px solid rgba(89, 182, 245, 0.9764705882);
+}
+.recetasMasPedidas__tarjeta__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #964905;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  border: 2px solid #7f9043;
+  margin-bottom: 5rem;
+}
+.card__imagen {
+  height: 16rem;
+  width: 12rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.card__boton {
+  width: 10rem;
+  height: 4rem;
+}
+.card__link {
+  color: aliceblue;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.card__carrito {
+  font-size: 25px;
+}
+
+.promocionesTienda {
+  border: 2px solid black;
+  background-color: #F7DC6F;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  height: 12rem;
+  padding-top: 5rem;
+}
+.promocionesTienda__link {
+  padding-top: 5rem;
+  text-decoration: none;
+  color: #186A3B;
+}
+
+.combosTienda {
+  border: 2px solid black;
+  background-color: #D4E157;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  height: 12rem;
+  padding-top: 5rem;
+}
+.combosTienda__link {
+  text-decoration: none;
+  color: #186A3B;
+}
+
+.formulario {
+  border: 2px solid #7f9043;
+  margin-top: 2rem;
+}
+.formulario__etiquetas {
+  margin-top: 1.2rem;
+}
+.formulario__click {
+  margin-bottom: 5px;
+}
+
+.mapa {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contacto__listaUno {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2;
+  padding-left: 0rem;
+  text-align: center;
+  color: #964905;
+}
+.contacto__listaUno__titulo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #186A3B;
+}
+
+.contacto__listaDos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__listaDos__link {
+  padding: 10px 20px;
+  text-transform: none;
+  color: #186A3B;
 }
 
 @media screen and (max-width: 576px) {
@@ -210,13 +355,13 @@
     height: 25rem;
     width: 100%;
   }
-  .almacen__link, .promociones__link, .recetas__link {
+  .almacen__link {
     opacity: 1;
     height: 10rem;
     width: 15rem;
     color: aliceblue;
   }
-  .promociones__link {
+  .promociones__link, .recetas__link {
     opacity: 1;
     height: 10rem;
     width: 15rem;
@@ -234,5 +379,11 @@
     height: auto;
     width: 100%;
     margin-top: 4rem;
+  }
+  .recetasMasPedidas {
+    flex-direction: column;
+  }
+  .categoriasRecetas {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
